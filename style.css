@@ -1,0 +1,109 @@
+body {
+     font-family: Arial, sans-serif;
+     margin: 0;
+     padding: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     background-color:#0056b3;
+     background-image: url("https://images.unsplash.com/photo-1464618663641-bbdd760ae84a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+     background-size: cover;
+     background-attachment: fixed;
+     flex-direction: column;
+   }
+
+   footer{
+     position: relative;
+     top: 1px;
+     /* bottom: 1px; */
+     margin-bottom: 11px;
+   }
+   
+   .quiz-container {
+     background: #ffffff;
+     border-radius: 10px;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+     padding: 20px;
+     max-width: 350px;
+     width: 100%;
+     text-align: center;
+   }
+   
+   h1 {
+     font-size: 24px;
+     margin-bottom: 20px;
+     color: #dc3545;
+   }
+   
+   .question {
+     font-size: 18px;
+     margin-bottom: 20px;
+   }
+   
+   .answers {
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+   }
+   
+   .answer {
+     padding: 10px 20px;
+     font-size: 16px;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     background: #007bff;
+     color: #fff;
+     transition: all 0.3s;
+   }
+   
+   .answer:hover {
+     background-color: black;
+     color: white;
+   }
+   
+   .answer.correct {
+     background-color: #28a745;
+   }
+   
+   .answer.incorrect {
+     background-color: #dc3545;
+   }
+   
+   .next-button {
+     margin-top: 20px;
+     padding: 10px 20px;
+     font-size: 16px;
+     border: none;
+     border-radius: 5px;
+     background: #6c757d;
+     color: #fff;
+     cursor: pointer;
+     transition: all 0.3s;
+   }
+   
+   .next-button:enabled {
+     background: #007bff;
+   }
+   
+   .next-button:enabled:hover {
+     background: #0056b3;
+   }
+   .quiz-container h2 {
+     font-size: 22px;
+     margin-bottom: 10px;
+   }
+   
+   .quiz-container p {
+     font-size: 18px;
+     margin-bottom: 20px;
+   }
+   
+   @media (max-width:400px) {
+     .quiz-container {
+          
+          max-width: 315px;
+        }
+      
+   }
